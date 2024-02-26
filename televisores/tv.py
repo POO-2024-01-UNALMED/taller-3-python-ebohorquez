@@ -48,31 +48,31 @@ class TV:
          return self._control
     
     def setControl(self, control):
-         self.control = control
+         self._control = control
 
     def turnOn(self):
-         self.estado = True
+         self._estado = True
 
     def turnOff(self):
-         self.estado = False
+         self._estado = False
 
     def getEstado(self):
-         return self.estado
+         return self._estado
 
     def canalDown(self):
-        if self.estado and 1 < self.canal <= 120:
-            self.canal -= 1
+        if self._estado and 1 < self._canal <= 120:
+            self._canal -= 1
 
     def canalUp(self):
-        if self.estado and 1 <= self.canal < 120:
-            self.canal += 1
+        if self._estado and 1 <= self._canal < 120:
+            self._canal += 1
 
     def volumenDown(self):
-        if self.estado and 0 < self.volumen <= 7:
-            self.volumen -= 1
+        if self._estado and 0 < self._volumen <= 7:
+            self._volumen -= 1
 
     def volumenUp(self):
-        if self.estado and 0 <= self.volumen < 7:
-            self.volumen += 1
+        if self._estado and 0 <= self._volumen < 7:
+            self._volumen += 1
     
          
