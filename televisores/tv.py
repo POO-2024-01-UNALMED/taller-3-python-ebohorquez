@@ -15,19 +15,19 @@ class TV:
          return cls._numTV
     
     @classmethod 
-    def setNumTV(cls, numTV: int):
+    def setNumTV(cls, numTV):
          cls._numTV = numTV
 
     def getMarca(self):
          return self._marca
     
     def setMarca(self, marca):
-         self.marca = marca
+         self._marca = marca
 
     def getCanal(self):
          return self._canal
     
-    def setCalan(self, canal):
+    def setCanal(self, canal):
          if 1 <= canal <= 120 and self._estado:
               self._canal = canal
 
@@ -35,7 +35,7 @@ class TV:
          return self._precio
     
     def setPrecio(self, precio):
-         self.getPrecio = precio
+         self._Precio = precio
 
     def getVolumen(self):
          return self._volumen
