@@ -1,7 +1,7 @@
 class TV:
     _numTV = 0
 
-    def _init__(self, marca, estado):
+    def __init__(self, marca, estado):
         self._marca = marca
         self._estado = estado
         self._canal = 1

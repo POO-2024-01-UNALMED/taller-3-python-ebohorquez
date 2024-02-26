@@ -33,6 +33,8 @@ class Control:
 
     def getTv(self):
         return self._tv
+    
+    
 
     
         
